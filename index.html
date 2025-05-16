@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Illuminate Reading</title>
+  <link rel="stylesheet" href="https://use.typekit.net/xvl8ddx.css">
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+     font-family: "dm-sans", sans-serif;
+font-weight: 300;
+font-style: normal;
+      background: #ffffff;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .panel {
+      width: 50vw;
+      height: 100vh;
+      overflow-y: auto;
+      padding: 3rem;
+      box-sizing: border-box;
+      transition: all 0.8s ease;
+    }
+
+    .panel.covered {
+      background: black;
+      color: transparent;
+      overflow: hidden;
+      box-shadow: inset 60px 60px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    .panel.covered * {
+      visibility: hidden;
+    }
+
+    .panel.visible {
+      background: white;
+      color: #111;
+      overflow-y: auto;
+    }
+
+    .section-box {
+      /*background: white;
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);*/
+      margin-bottom: 2rem;
+      max-width: 60%;
+       padding: 1.5rem;
+    }
+
+    .left-align {
+      margin-left: 0;
+    }
+
+    .right-align {
+      margin-left: auto;
+    }
+
+    h2 {
+     font-family: "instrument-serif", sans-serif;
+font-weight: 500;
+font-style: normal;
+      font-size: 1.9rem;
+      margin-top: 0;
+    }
+
+    h3{
+      font-family: "instrument-serif", sans-serif;
+font-weight: 700;
+font-style: normal;
+      font-size: 2.8rem;
+      margin-top: 0;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .box-button {
+      position: absolute;
+      color: white;
+      top: 1rem;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      background: rgb(0, 0, 0);
+      border: 2px solid rgb(255, 255, 255);
+      z-index: 10;
+    }
+
+    #illuminateLeft {
+      left: 1rem;
+      display: none;
+    }
+
+    #illuminateRight {
+      right: 1rem;
+    }
+    .hidden {
+  display: none;
+}
+  </style>
+</head>
+<body>
+  <button class="box-button" id="illuminateLeft">Switch on to Left</button>
+  <button class="box-button" id="illuminateRight">Connect to Right</button>
+  <div class="container">
+    <div class="panel" id="leftContent">
+      <div class="section-box left-align">
+        <h3><i>The Tied Up Current</i></h3>
+        <p><strong>A New Perspective on Electrical Wire Waste</strong><br>Manasvi Joshi<br>Scrap Lab, Spring 2025</p>
+
+        <div style="margin-top: 2rem;">
+    <img src="Images/Adobe Express - file (6).png"  style="width: 120%; max-width: 1000px; border-radius: 10px;" />
+  </div>
+      </div>
+
+      <div class="section-box right-align">
+        <h2>The Afterlife of Electrical Wires</h2>
+        <p>In our rapidly advancing technological world, electrical wires are often rendered obsolete due to planned obsolescence and the swift pace of innovation. Devices become incompatible, and repairs are frequently unfeasible, leading to an ever-growing accumulation of electronic waste.</p>
+        <p>According to the Global E-waste Monitor 2024, the annual generation of e-waste is increasing by 2.6 million tonnes, projected to reach 82 million tonnes by 2030. Alarmingly, only 22.3% of this waste was properly collected and recycled in 2022, leaving valuable resources unaccounted for and posing environmental risks.</p>
+         <img src="Images/waste.jpg"  style="width: 100%; max-width: 2000px; " />
+      </div>
+
+      <div class="section-box left-align" style="margin-top: 2rem;">
+        <h2>Recycling Copper?</h2>
+        <p>Copper, a primary component of electrical wires, is infinitely recyclable without loss of quality. However, the recycling process is energy-intensive, consuming about 85% less energy than mining new copper, yet still requiring significant energy input. This raises concerns about the sustainability of recycling practices, especially when considering the environmental impact of energy consumption.</p>
+      </div>
+
+      <div class="section-box right-align">
+        <h2>What are Cables?</h2>
+        <ul>
+          <li><strong>Connections</strong> — physical and symbolic links between systems and people</li>
+          <li><strong>Messes</strong> — tangled realities of modern infrastructure</li>
+          <li><strong>The Unseen Backend</strong> — the skeleton beneath technology</li>
+          <li><strong>Carriers of Light</strong> — bringing power, electricity, function</li>
+          <li><strong>Communication</strong> — transporting messages across space and time</li>
+        </ul>
+        <p>When we discard cables, we discard more than materials—we discard meaning.</p>
+      </div>
+
+      <div class="section-box left-align">
+        <h2>The Grids of Embroidery</h2>
+        <img src="Images/Easter.001.jpg"  style="width: 120%; max-width: 2000px; " />
+        
+        <p>Embroidery is the craft of storytelling through thread. In cross-stitch embroidery, threads follow a fixed grid—a structured logic that echoes the wire grids within electrical cables. Although copper wires aren’t as soft or free-flowing as threads, their thinness allows them to bend and adapt to grid-based patterns with precision and constraint.</p>
+        <p>Embroidery is also about the relationship between form and surface—just like cables embedded into walls, embroidery embeds meaning onto fabric.</p>
+      </div>
+
+      <div class="section-box right-align">
+        <h2>Cultured Waste</h2>
+        <p>This artwork repurposes copper wires not just functionally, but culturally. In most societies, waste is excluded from tradition, ritual, or beauty. This piece aims to break that boundary. Why can’t discarded cables become vessels of culture, memory, and spirituality?</p>
+      </div>
+
+      <div class="section-box left-align">
+        <h2>Embroidery: A Tapestry of Cultural Narratives</h2>
+        <ul>
+          <li><strong>Mexican "Ojo de Dios" (Eye of God)</strong>: A spiritual symbol representing the power to see and understand unseen things. Traditionally crafted with yarn and sticks, it embodies protection and guidance.</li>
+          <li><strong>Indian Kasuti Embroidery</strong>: Originating from Karnataka, India, Kasuti involves intricate patterns stitched onto fabric, often depicting religious symbols, animals, and geometric designs. Each piece can contain up to 5,000 hand stitches, reflecting meticulous craftsmanship.</li>
+          <li><strong>Palestinian Tatreez</strong>: A traditional form of embroidery practiced by Palestinian women, Tatreez patterns are passed down through generations, encoding stories, heritage, and identity into the fabric.</li>
+        </ul>
+        <img src=" Images/6.png"  style="width: 150%; max-width: 2000px; " />
+        <img src="Images/7.png"  style="width: 150%; max-width: 2000px; " />
+        
+       
+      </div>
+
+      <div class="section-box right-align">
+        <h2>The Scene: A Stitchwork of Spiritual Connection</h2>
+        <ul>
+          <li><strong>Cypress trees</strong> from Tatreez anchor the ground.</li>
+          <li><strong>Kasuti motifs</strong> represent celestial bodies—the sun and moon—guiding forces above.</li>
+          <li>At the center, a <strong>Kasuti prayer symbol</strong> becomes the heart of the work—calling for unity, healing, and cultural connection.</li>
+          <li>From this prayer, <strong>raw copper wires</strong> emerge, branching outward in all directions—forming links, bridges, and possibilities.</li>
+          <li>Overseeing the scene is the <strong>Eye of God</strong>, watching a world attempting to reconnect through repair and reverence.</li>
+        </ul>
+        <p>The entire composition speaks of interdependence and spiritual circuitry. It suggests that cultural connection, like electricity, needs a medium—a conduit—to flow through. In this case, it’s copper. Not melted. Not erased. Just redirected.</p>
+      </div>
+    </div>
+
+     <div class="panel covered" id="rightContent">
+      <div class="section-box left-align">
+        <h3>The Process</h3>
+        
+       <img src="Images/Adobe Express - file (7).png" style="width: 120%; max-width: 1000px; border-radius: 10px;"> 
+        <p><strong>Where Did I Start?</strong></p>
+        <p>My exploration began with working on broken electronics—curious about their interiors and frustrated by how quickly they became unusable. I began observing the material culture of planned obsolescence: products designed to fail, resist repair, or fall out of use far too soon.</p>
+        <p>Among these electronics, wires stood out. They were:</p>
+        <ul>
+          <li>Linear and structured, yet tangled and messy.</li>
+          <li>Functional, yet often discarded.</li>
+          <li>Visually organized in color, yet never meant to be seen.</li>
+        </ul>
+        <p><em>Can I take something built to be invisible and rigid, and make it expressive and fluid?</em></p>
+         <img src=" Images/1.png"  style="width: 120%; max-width: 2000px; " />
+        
+        
+      </div>
+
+      <div class="section-box right-align">
+        <h2>What Was the Material Like?</h2>
+        <p>I began dissecting discarded ethernet and USB-C cables, peeling away their rubber skins. Here's what I discovered:</p>
+        <p><strong>Ethernet Cables:</strong></p>
+        <ul>
+          <li>Encased in a thick rubber sleeve.</li>
+          <li>Inside were 8 inner wires, twisted into 4 color-coded pairs:</li>
+          <li>Blue/Blue-White – usually the primary signal path.</li>
+          <li>Orange/Orange-White – used in data transfer.</li>
+          <li>Green/Green-White – supports extended signal pathways.</li>
+          <li>Brown/Brown-White – auxiliary or integrity-based functions.</li>
+        </ul>
+        <p><strong>USB-C Wires:</strong></p>
+        <ul>
+          <li>Contained 4 wires: red, green, white, black.</li>
+          <li>Simpler in layout but offered a bolder color palette.</li>
+        </ul>
+        <p><strong>Physical Qualities:</strong></p>
+        <ul>
+          <li>Less flexible than thread, but not too stiff.</li>
+          <li>Easy to cut and shape using scissors.</li>
+          <li>The rubber body helped untangle knots—mistakes weren’t permanent.</li>
+          <li>The copper tip functioned like a needle when piercing fabric.</li>
+        </ul>
+        <img src=" Images/2.png"  style="width: 120%; max-width: 2000px; " />
+      </div>
+
+      <div class="section-box left-align">
+        <h2>Discovering Embroidery</h2>
+        <p>My introduction to embroidery came through a Tatreez workshop at the college. There, I realized:</p>
+        <ul>
+          <li>Embroidery is mathematical and poetic-grids, symbols, and precision.</li>
+          <li>Tatreez is deeply tied to identity and storytelling.</li>
+          <li>Could wires-discarded and cold—carry cultural meaning the way threads do?</li>
+        </ul>
+        <p>So I tried.</p>
+        <p>I experimented with metal mesh frames, but:</p>
+        <ul>
+          <li>Their rigid structure clashed with the natural tension of wires.</li>
+          <li>The grid cells couldn't hold more than 3–4 wires comfortably.</li>
+        </ul>
+        <p>I needed a more adaptable surface.</p>
+         <img src=" Images/3.png"  style="width: 120%; max-width: 2000px; " />
+      </div>
+
+      <div class="section-box right-align">
+        <h2>Why Jute?</h2>
+        <ul>
+          <li><strong>Natural texture:</strong> Its coarse weave gave wires grip without needing glue.</li>
+          <li><strong>Visible grid:</strong> The open warp and weft threads mimicked embroidery mesh, but with more flexibility.</li>
+          <li><strong>Eco-friendly:</strong> Jute is a biodegradable, sustainable fiber, aligning with the project's ethos of reuse.</li>
+          <li><strong>Aesthetic warmth:</strong> The earthy tones of jute softened the industrial feel of the wires.</li>
+        </ul>
+        <p>It created a balance: <em>organic meets synthetic</em>.</p>
+      </div>
+
+      <div class="section-box left-align">
+        <h2>Planning the Work</h2>
+        <p>Before stitching, I mapped out ideas:</p>
+        <ul>
+          <li>On paper, sketching grid-based compositions.</li>
+          <li>On a Figma board, where I layered images, symbols, and color experiments.</li>
+        </ul>
+        <p>I researched traditional motifs and plotted their locations in relation to each other, like choreography.</p>
+         <img src=" Images/8.png"  style="width: 120%; max-width: 2000px; " />
+      </div>
+
+      <div class="section-box right-align">
+        <h2>Getting Started</h2>
+        <img src=" Images/5.png"  style="width: 120%; max-width: 2000px; " />
+        <ul>
+          <li>Jute was too floppy on its own, so I used embroidery hoops for stability.</li>
+          <li>The copper wire tips pierced the fabric easily—no extra needle needed.</li>
+          <li>I marked grids, counted intersections, and mapped symbols carefully.</li>
+          <li>This process was portable—I carried it with me to the river, the park, anywhere quiet.</li>
+        </ul>
+        <p>The act of stitching became meditative. <br><em>Undoing, redoing, observing.</em><br>It helped me mentally, like a tactile journal.</p>
+         <img src=" Images/4.png"  style="width: 120%; max-width: 2000px; " />
+      </div>
+
+      <div class="section-box left-align">
+        <h2>What This Work Suggests</h2>
+        <p>Beyond symbolism, this artwork makes a material claim:</p>
+        <ul>
+          <li>That discarded wires can act as thread.</li>
+          <li>That cables, often dismissed as waste, can tie cultures together.</li>
+          <li>That embedding technology into cultural form might be more than metaphor—it might be material truth.</li>
+        </ul>
+      </div>
+
+      <div class="section-box right-align">
+        <h2>It Opens a Dialogue</h2>
+        <ul>
+          <li>Can waste wire become a new form of stitch?</li>
+          <li>Can we embed power, connection, and culture into what was once discarded?</li>
+          <li>Can we build meaning from mess?</li>
+        </ul>
+        <p>This process, from dismantling to rethreading, suggests that the future of sustainability lies not only in <strong>recycling</strong>, but in <strong>rewiring</strong> how we perceive value.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const left = document.getElementById("leftContent");
+      const right = document.getElementById("rightContent");
+      const toggleBtn = document.getElementById("illuminateRight");
+      const leftBtn = document.getElementById("illuminateLeft");
+
+      toggleBtn.addEventListener("click", () => {
+        left.classList.add("covered");
+        right.classList.remove("covered");
+        right.classList.add("visible");
+        leftBtn.style.display = "block";
+        toggleBtn.classList.add("hidden");
+      });
+
+      leftBtn.addEventListener("click", () => {
+        left.classList.remove("covered");
+        right.classList.remove("visible");
+        right.classList.add("covered");
+        leftBtn.style.display = "none";
+        toggleBtn.classList.remove("hidden");
+      });
+    });
+  </script>
+</body>
+</html>
